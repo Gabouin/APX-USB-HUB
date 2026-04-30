@@ -26,13 +26,11 @@
 - [About the Project](#about-the-project)
 - [Features](#features)
 - [Repository Structure](#repository-structure)
-- [Bill of Materials](#bill-of-materials)
-- [KiCad / Electronics](#kicad--electronics)
-- [CAD / Enclosure](#cad--enclosure)
-- [3D Printing](#3d-printing)
-- [Manufacturing](#manufacturing)
-- [Build Notes](#build-notes)
+- [Schematic](#schematic-on-easyeda)
+- [PCB](#pcb-on-easyeda)
+- [CAD](#cad)
 - [Roadmap](#roadmap)
+- [Bill of Materials](#bill-of-materials)
 - [License](#license)
 - [Contributing](#contributing)
 
@@ -40,9 +38,7 @@
 
 ## About the Project
 
-**APX-USB-HUB** is a 4-port USB hub designed with **per-port fault indication**: a **PTC fuse** helps protect the board in case of a short circuit, and **LEDs** help identify which port is causing the issue.
-
-> This repository is structured so you can add files progressively (images, BOM, CAD, KiCad) without having to reorganize later.
+**APX USB HUB** is a 4-port USB hub designed with **per-port fault indication**: a **PTC fuse** helps protect the board in case of a short circuit, and **LEDs** help identify which port is causing the issue.
 
 ---
 
@@ -59,82 +55,67 @@
 
 Main folders you should use (and keep stable):
 
-- `kicad/` — KiCad project sources + `kicad/exports/` for fabrication outputs
-- `bom/` — BOM files (CSV/MD)
-- `cad/` — enclosure/mechanical CAD
-- `3d-printing/` — print-ready files (STL/3MF) and print notes
-- `docs/images/` — images used in the README and documentation
-- `hardware/datasheets/` — component datasheets
+- `src/easyeda/` — EasyEDA project sources
+- `production/` for fabrication outputs
+- `production/bom/` — BOM files (CSV/MD)
+- `src/cad/` — mechanical CAD
+- `src/cad/printing/` — enclosure CAD
+- `images/` — images used in the README and documentation
+
+---
+
+## Schematic on EasyEDA
+
+Source : `src/easyeda/schem/`  
+
+<img width="1100" height="951" alt="Schematic_USB-HUB_2026-04-30" src="https://github.com/user-attachments/assets/8b705584-d4ca-4481-b807-c388a4a429d1" />
+
+---
+
+## PCB on EasyEDA
+
+Source : `src/easyeda/pcb/`  
+
+<div align="center">
+  <table>
+    <tr>
+      <td valign="bottom"><img width=90% alt="Capture d&#39;écran 2026-04-30 224539" src="https://github.com/user-attachments/assets/530cfefe-2f57-424b-854e-35af1d31fe8d" /></td>
+      <td valign="bottom"><img width=120% alt="Capture d&#39;écran 2026-04-30 224600" src="https://github.com/user-attachments/assets/2ccbf484-b775-496d-a6e4-b73c638ddd77" /> </td>
+      <td valign="bottom"><img width=90% alt="Capture d&#39;écran 2026-04-30 224614" src="https://github.com/user-attachments/assets/5dff19da-bd89-4772-a423-34a431e05983" /></td>
+  </table>
+</div>
+<div align="center">
+  <table>
+    <tr>
+      <td valign="bottom"><img width=100% alt="Capture d&#39;écran 2026-04-28 222300" src="https://github.com/user-attachments/assets/406c1b7d-0544-4e32-b367-07517c7ed280" /></td>
+      <td valign="bottom"><img width=100% alt="Capture d&#39;écran 2026-04-28 222439" src="https://github.com/user-attachments/assets/3a3d7d4b-6fa9-49ce-826e-584248bf74ac" /></td>
+  </table>
+</div>
+
+
+
+---
+
+## CAD
+
+- source: `src/cad/printing/`
 
 ---
 
 ## Bill of Materials
 
-- CSV: `bom/apx-usb-hub_bom.csv` *(to be added)*
-- Optional readable BOM: `bom/apx-usb-hub_bom.md`
+Source: `production/APX_USB_HUB-bom.csv`
 
-> For now you can add an empty placeholder file, then fill it later.
-
----
-
-## KiCad / Electronics
-
-KiCad sources will live in:
-
-- `kicad/APX-USB-HUB.kicad_pro`
-- `kicad/APX-USB-HUB.kicad_sch`
-- `kicad/APX-USB-HUB.kicad_pcb`
-
-Exports (generated files) should go to:
-
-- `kicad/exports/schematics/` (PDF/PNG)
-- `kicad/exports/gerbers/`
-- `kicad/exports/assembly/` (CPL / pick&place, positions, etc.)
-
----
-
-## CAD / Enclosure
-
-- CAD sources: `cad/enclosure/`
-- Additional mechanical files: `cad/misc/`
-
-Add preview renders to:
-
-- `docs/images/pcb/`
-- `docs/images/hero/`
-
----
-
-## 3D Printing
-
-Print-ready files should go to:
-
-- `3d-printing/stl/`
-- `3d-printing/3mf/`
-
-Recommended: add printer/slicer settings in `3d-printing/README.md`.
-
----
-
-## Manufacturing
-
-Manufacturing notes and supplier links can go to:
-
-- `docs/manufacturing/`
-
-If you produce a panel or use an assembly service, keep the outputs under:
-
-- `kicad/exports/gerbers/`
-- `kicad/exports/assembly/`
-
----
-
-## Build Notes
-
-Add photos and step-by-step documentation here:
-
-- `docs/images/build/`
-- `docs/wiring/`
+| ID | Name | Designator | Footprint | Quantity | Manufacturer Part | Manufacturer | Supplier | Supplier Part | Price | Pins |
+|---:|---|---|---|---:|---|---|---|---|---:|---:|
+| 1 | 10uF | C1,C2,C3,C4,C5,C6,C7 | C0603 | 7 | CL10A106KP8NNNC | SAMSUNG(三星) | LCSC | C19702 | 0.008 | 2 |
+| 2 | NSR0320MW2T1G | D1 | SOD-323_L1.8-W1.3-LS2.5-RD | 1 | NSR0320MW2T1G | onsemi(安森美) | LCSC | C48192 | 0.118 | 2 |
+| 3 | SMD1206P050TF | F1,F2,F3,F4 | F1206 | 4 | SMD1206P050TF | RUILON(瑞隆源) | LCSC | C20799 | 0.08 | 2 |
+| 4 | 19-21/BHC-AN1P2/4T | L1,L2,L3,L4 | LED0603-R-RD | 4 | 19-21/BHC-AN1P2/4T | EVERLIGHT(亿光) | LCSC | C2986002 | 0.069 | 2 |
+| 5 | 1kΩ | R1,R2,R3,R4 | R0805 | 4 | RC0805FR-071KL | YAGEO(国巨) | LCSC | C95781 | 0.003 | 2 |
+| 6 | SL2.1A | U1 | SOP-16_L10.0-W3.9-P1.27-LS6.0-BL | 1 | SL2.1A | CoreChips(和芯润德) | LCSC | C192893 | 0.235 | 16 |
+| 7 | U-G-04DD-W-01 | USB1 | USB-A-TH_U-G-04WD-W-01 | 1 | U-G-O4DD-W-1 | 韩国韩荣 | LCSC | C98125 | 0.112 | 6 |
+| 8 | USB-AF-90-14.4X13.6-H7.0-DIP | USB2,USB3,USB4,USB5 | USB-A-TH_C46407 | 4 | 903-131A1011D10100 | 精拓金 | LCSC | C46407 | 0.048 | 6 |
 
 ---
 
