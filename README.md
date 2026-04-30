@@ -6,9 +6,7 @@
 <table>
   <tr>
     <td width="40%">
-      <!-- Replace this later with your hero image -->
-      <img width=100% alt="Capture d&#39;écran 2026-04-28 222300" src="https://github.com/user-attachments/assets/439bb6c6-72f7-480c-a15d-0334e0371ab1" />
-      <img width=100% alt="Capture d&#39;écran 2026-04-28 222439" src="https://github.com/user-attachments/assets/5cf580d7-579c-42b4-b581-2473d596b8ed" />
+      <img width="1076" height="587" alt="image" src="https://github.com/user-attachments/assets/9b4e1c92-7d47-4f66-aab3-16fa35ab4673" />
     </td>
     <td>
       <h1>APX USB HUB</h1>
@@ -47,7 +45,6 @@
 - **4 USB ports**
 - **PTC protection** to help limit current during short circuits
 - **Status LEDs** to quickly identify the faulty port
-- Documentation-first repo layout (BOM, manufacturing exports, images, etc.)
 
 ---
 
