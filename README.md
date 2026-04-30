@@ -5,14 +5,15 @@
 
 <table>
   <tr>
-    <td width="18%">
+    <td width="40%">
       <!-- Replace this later with your hero image -->
-      <img width="100%" alt="APX-USB-HUB preview" src="docs/images/hero/placeholder.png" />
+      <img width=100% alt="Capture d&#39;écran 2026-04-28 222300" src="https://github.com/user-attachments/assets/439bb6c6-72f7-480c-a15d-0334e0371ab1" />
+      <img width=100% alt="Capture d&#39;écran 2026-04-28 222439" src="https://github.com/user-attachments/assets/5cf580d7-579c-42b4-b581-2473d596b8ed" />
     </td>
     <td>
       <h1>APX USB HUB</h1>
       <p>
-        Cool USB HUB with 4 USB ports, PTC to protect the board if there is a short circuit and LEDs to indicate which port the problem comes from.
+        USB HUB with 4 USB 2.0 ports, PTC to protect the board if there is a short circuit and LEDs to indicate which port the problem comes from. The USB ports are linked to a SL2.1A chip thanks to D- and D+ traces that are the same lenght to have the best signal possible ! The silkscreen is elaborate with cool drawings of Dinorpheus (Hack Club's mascot), PEPE the frog and a cool emoji that I love. There is also a QR CODE that link to my website.
       </p>
     </td>
   </tr>
