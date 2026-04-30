@@ -3,13 +3,14 @@
 ![Series](https://img.shields.io/badge/Series-APX-red.svg)
 ![Hackatime Badge](https://hackatime-badge.hackclub.com/U0A2SJ7B739/USB%20HUB)
 
+# APX USB HUB
+
 <table>
   <tr>
-    <td width="40%">
+    <td width="70%">
       <img width="1076" height="587" alt="image" src="https://github.com/user-attachments/assets/9b4e1c92-7d47-4f66-aab3-16fa35ab4673" />
     </td>
     <td>
-      <h1>APX USB HUB</h1>
       <p>
         USB HUB with 4 USB 2.0 ports, PTC to protect the board if there is a short circuit and LEDs to indicate which port the problem comes from. The USB ports are linked to a SL2.1A chip thanks to D- and D+ traces that are the same lenght to have the best signal possible ! The silkscreen is elaborate with cool drawings of Dinorpheus (Hack Club's mascot), PEPE the frog and a cool emoji that I love. There is also a QR CODE that link to my website.
       </p>
