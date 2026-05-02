@@ -39,13 +39,13 @@ Thanks for your interest in contributing! This is a hardware project, so contrib
 
 Please follow these conventions to keep the repo clean:
 
-- `kicad/` — KiCad sources (`.kicad_pro`, `.kicad_sch`, `.kicad_pcb`)
-- `kicad/exports/` — generated outputs (Gerbers, schematic PDFs, CPL, etc.)
-- `bom/` — bill of materials (CSV/MD)
-- `cad/` — CAD sources for enclosures/mechanical
-- `3d-printing/` — STL/3MF + printing notes
-- `docs/images/` — images used by the README
-- `hardware/datasheets/` — datasheets PDFs
+- `src/easyeda/` — EasyEDA project sources (schematic, PCB)
+- `src/easyeda/pcb/` — EasyEDA PCB source file
+- `src/easyeda/schem/` — EasyEDA schematic source file
+- `production/pcb/` — PCB fabrication outputs (Gerbers, BOM CSV, Pick & Place)
+- `production/cad/` — 3D-printing files (.3mf)
+- `src/cad/` — mechanical CAD sources (.f3z, .step)
+- `images/` — images used by the README
 
 Try to avoid committing random exports to the root folder.
 
@@ -73,9 +73,9 @@ git checkout -b docs/add-build-photos
 ```
 
 ### 4. Make your changes
-- For KiCad: keep the main sources in `kicad/` and place exports in `kicad/exports/`.
-- For documentation: update `README.md` and/or add docs under `docs/`.
-- For CAD/3D printing: keep sources under `cad/` and print files under `3d-printing/`.
+- For EasyEDA: keep the main sources in `src/easyeda/` and place fabrication exports in `production/pcb/`.
+- For documentation: update `README.md` and/or add images under `images/`.
+- For CAD/3D printing: keep sources under `src/cad/` and print files under `production/cad/`.
 
 ### 5. Commit your changes
 ```bash
@@ -96,7 +96,7 @@ Then open a PR targeting the default branch.
 To keep PRs easy to review:
 - Keep PRs focused on a single topic.
 - Include screenshots/renders when modifying PCB/CAD.
-- If you change the BOM, update the BOM file(s) under `bom/`.
+- If you change the BOM, update the BOM file(s) under `production/pcb/`.
 - If you change file locations, update links in `README.md`.
 
 ---

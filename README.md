@@ -54,9 +54,9 @@ Main folders you should use (and keep stable):
 
 - `src/easyeda/` — EasyEDA project sources
 - `production/` for fabrication outputs
-- `production/bom/` — BOM files (CSV/MD)
-- `src/cad/` — mechanical CAD
-- `src/cad/printing/` — enclosure CAD
+- `production/pcb/` — PCB fabrication files (Gerbers, BOM, Pick & Place)
+- `production/cad/` — 3D-printing files (.3mf)
+- `src/cad/` — mechanical CAD sources
 - `images/` — images used in the README and documentation
 
 ---
@@ -116,13 +116,13 @@ Source : `src/easyeda/pcb/`
   </table>
 </div>
 
-- source: `production/printing/`
+- source: `production/cad/`
 
 ---
 
 ## Bill of Materials
 
-Source: `production/APX_USB_HUB-bom.csv`
+Source: `production/pcb/bom.csv`
 
 | ID | Name | Designator | Footprint | Quantity | Manufacturer Part | Manufacturer | Supplier | Supplier Part | Price | Pins |
 |---:|---|---|---|---:|---|---|---|---|---:|---:|
