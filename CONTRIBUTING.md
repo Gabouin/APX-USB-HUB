@@ -17,25 +17,21 @@ Thanks for your interest in contributing! This is a hardware project, so contrib
 
 ## What Contributions Are Welcome
 
-### Electronics / PCB
-- Schematic improvements (protection, ESD, filtering, power distribution).
+### PCB
+- Schematic improvements (LEDs light up only when port used, ESD, filtering, power distribution).
 - PCB layout improvements (routing, grounding, test points, silkscreen clarity).
 - Suggestions for better fault detection / LED indication behavior.
 - Alternative PTC values or protection approaches (with justification).
 
-### Mechanical / CAD
-- Enclosure designs, mounting features, cable strain relief.
-- Variants (wall-mount, desk enclosure, compact version).
+### CAD
+- Different enclosure designs, mounting features, cable strain relief.
+- Improvements for the actual version that is too simple
 - Improvements for printability and robustness.
 
 ### Documentation
-- Fixing typos, improving clarity in README/build steps.
+- Fixing typos, improving clarity in README and add build steps.
 - Adding diagrams, annotated images, and assembly photos.
 - Adding manufacturing notes (Gerber export settings, recommended fab settings).
-
-### Manufacturing
-- Validating footprints, DFM suggestions, assembly notes.
-- Adding pick&place outputs and assembly drawings.
 
 ---
 
