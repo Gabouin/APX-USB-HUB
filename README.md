@@ -50,8 +50,6 @@
 
 ## Repository Structure
 
-Main folders you should use (and keep stable):
-
 - `src/easyeda/` — EasyEDA project sources
 - `production/` for fabrication outputs
 - `production/pcb/` — PCB fabrication files (Gerbers, BOM, Pick & Place)
