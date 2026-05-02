@@ -28,7 +28,6 @@
 - [Schematic](#schematic-on-easyeda)
 - [PCB](#pcb-on-easyeda)
 - [CAD](#cad)
-- [Roadmap](#roadmap)
 - [Bill of Materials](#bill-of-materials)
 - [License](#license)
 - [Contributing](#contributing)
@@ -66,7 +65,7 @@ Main folders you should use (and keep stable):
 
 Source : `src/easyeda/schem/`  
 
-<img width="1100" height="951" alt="Schematic_USB-HUB_2026-04-30" src="https://github.com/user-attachments/assets/8b705584-d4ca-4481-b807-c388a4a429d1" />
+<img width=90% alt="Schematic_USB-HUB_2026-04-30" src="https://github.com/user-attachments/assets/8b705584-d4ca-4481-b807-c388a4a429d1" />
 
 ---
 
@@ -96,7 +95,28 @@ Source : `src/easyeda/pcb/`
 
 ## CAD
 
-- source: `src/cad/printing/`
+### The entire product - render
+<div align="center">
+  <table>
+    <tr>
+      <td valign="bottom"><img width=100% alt="image" src="https://github.com/user-attachments/assets/c08d97f3-9e2e-4b57-b1db-f5c6ff6f3498" />
+</td>
+      <td valign="bottom"><img width=100% alt="Capture d&#39;écran 2026-05-03 000834" src="https://github.com/user-attachments/assets/43b00fa7-6010-416f-ac75-5c3624a461ec" /></td>
+  </table>
+</div>
+
+- source: `src/cad/`  
+
+### Parts to 3D print - render
+<div align="center">
+  <table>
+    <tr>
+      <td valign="bottom"><img width=100% alt="image" src="https://github.com/user-attachments/assets/8b3ae70c-0c3f-41f7-b70e-9021f49e8d03" /></td>
+      <td valign="bottom"><img width=100% alt="Capture d&#39;écran 2026-05-03 001811" src="https://github.com/user-attachments/assets/73842b73-bc4f-460b-9bf4-d9a2110d44aa" /></td>
+  </table>
+</div>
+
+- source: `production/printing/`
 
 ---
 
@@ -114,16 +134,6 @@ Source: `production/APX_USB_HUB-bom.csv`
 | 6 | SL2.1A | U1 | SOP-16_L10.0-W3.9-P1.27-LS6.0-BL | 1 | SL2.1A | CoreChips(和芯润德) | LCSC | C192893 | 0.235 | 16 |
 | 7 | U-G-04DD-W-01 | USB1 | USB-A-TH_U-G-04WD-W-01 | 1 | U-G-O4DD-W-1 | 韩国韩荣 | LCSC | C98125 | 0.112 | 6 |
 | 8 | USB-AF-90-14.4X13.6-H7.0-DIP | USB2,USB3,USB4,USB5 | USB-A-TH_C46407 | 4 | 903-131A1011D10100 | 精拓金 | LCSC | C46407 | 0.048 | 6 |
-
----
-
-## Roadmap
-
-- [ ] Add schematic export (PNG/PDF) in `kicad/exports/schematics/`
-- [ ] Add PCB renders in `docs/images/pcb/`
-- [ ] Add BOM in `bom/apx-usb-hub_bom.csv`
-- [ ] Add enclosure CAD + print files
-- [ ] Add assembly/build photos
 
 ---
 
