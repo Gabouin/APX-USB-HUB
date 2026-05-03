@@ -27,7 +27,8 @@ A 4-port USB 2.0 hub with per-port fault indication (PTC + LEDs).
   <a href="#cad">CAD</a> •
   <a href="#bill-of-materials">BOM</a> •
   <a href="#license">License</a> •
-  <a href="#contributing">Contributing</a>
+  <a href="#contributing">Contributing</a> •
+  <a href="#credits">Credits</a>
 </p>
 
 <br>
@@ -130,3 +131,13 @@ This project is licensed under the **MIT License** — see the [LICENSE](LICENSE
 ## Contributing
 
 Contributions, improvements, and remixes are welcome! Please read the [CONTRIBUTING.md](CONTRIBUTING.md) guide to get started.
+
+## Credits
+
+This project uses:
+
+- **EasyEDA** - PCB design and schematic capture
+- **PCBWAY** - PCB manufacturing and assembly
+- **Figma** - Silkscreen and banner design
+- **Fusion 360** - CAD modeling and render
+- **[@NotARoomba](https://github.com/notaroomba)** - Readme template
