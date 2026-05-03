@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <img src="https://user-images.githubusercontent.com/0/0" alt="APX USB HUB" width="200">
+  <img width=20% alt="apx hub logo" src="https://github.com/user-attachments/assets/7bd5f5c6-ce9c-4e80-b4da-434bb7e50d18" />
   <br>
   APX USB HUB
   <br>
