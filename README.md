@@ -21,7 +21,6 @@ A 4-port USB 2.0 hub with per-port fault indication (PTC + LEDs).
 
 <p align="center">
   <a href="#about-the-project">About</a> •
-  <a href="#features">Features</a> •
   <a href="#repository-structure">Structure</a> •
   <a href="#schematic-on-easyeda">Schematic</a> •
   <a href="#pcb-on-easyeda">PCB</a> •
@@ -31,13 +30,17 @@ A 4-port USB 2.0 hub with per-port fault indication (PTC + LEDs).
   <a href="#contributing">Contributing</a>
 </p>
 
-<img src="https://github.com/user-attachments/assets/9b4e1c92-7d47-4f66-aab3-16fa35ab4673" alt="APX USB HUB" width="800"/>
+<br>
+<br>
+<p align=center>
+<img src="https://github.com/user-attachments/assets/9b4e1c92-7d47-4f66-aab3-16fa35ab4673" alt="APX USB HUB" width=70%/>
+</p>
 
 ## About the Project
 
 **APX USB HUB** is a 4-port USB hub designed with **per-port fault indication**: a **PTC fuse** helps protect the board in case of a short circuit, and **LEDs** help identify which port is causing issues.
 
-## Features
+### Features
 
 - **4 USB ports**
 - **PTC protection** to help limit current during short circuits
