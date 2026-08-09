@@ -49,12 +49,12 @@ A 4-port USB 2.0 hub with per-port fault indication (PTC + LEDs).
 
 ## Repository Structure
 
-- `src/easyeda/` — EasyEDA project sources
+- `src/easyeda/` - EasyEDA project sources
 - `production/` for fabrication outputs
-- `production/pcb/` — PCB fabrication files (Gerbers, BOM, Pick & Place)
-- `production/cad/` — 3D-printing files (.3mf)
-- `src/cad/` — mechanical CAD sources
-- `images/` — images used in the README and documentation
+- `production/pcb/` - PCB fabrication files (Gerbers, BOM, Pick & Place)
+- `production/cad/` - 3D-printing files (.3mf)
+- `src/cad/` - mechanical CAD sources
+- `images/` - images used in the README and documentation
 
 ## Schematic on EasyEDA
 
@@ -126,7 +126,7 @@ Source: `production/pcb/bom.csv`
 
 ## License
 
-This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+This project is licensed under the **MIT License**, see the [LICENSE](LICENSE) file for details.
 
 ## Contributing
 
