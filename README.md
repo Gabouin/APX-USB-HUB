@@ -33,13 +33,14 @@ A 4-port USB 2.0 hub with per-port fault indication (PTC + LEDs).
 
 <br>
 <br>
-<p align=center>
+<p align="center">
 <img src="https://github.com/user-attachments/assets/9b4e1c92-7d47-4f66-aab3-16fa35ab4673" alt="APX USB HUB" width=70%/>
   <br>
 </p>
-<p align=center>
-Check out the demo video on [YouTube](https://www.youtube.com/watch?v=UhorFzSv4f8)
-</p>
+<div align="center">
+
+  Check out the demo video on [YouTube](https://www.youtube.com/watch?v=UhorFzSv4f8)
+</div>
 
 ## About the Project
 
